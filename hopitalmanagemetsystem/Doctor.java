@@ -1,0 +1,87 @@
+package hopitalmanagemetsystem;
+
+public class Doctor {
+    private int d_id; // Changed from doc_id to d_id
+    private String name;
+    private String qualification;
+    private String designation;
+    private double salary;
+    private String department;
+
+    public Doctor(String name, String qualification, String designation, double salary, String department) {
+        this.name = name;
+        this.qualification = qualification;
+        this.designation = designation;
+        this.salary = salary;
+        this.department = department;
+    }
+
+    public Doctor(int d_id, String name, String qualification, String designation, double salary, String department) {
+        this.d_id = d_id; // Changed from doc_id to d_id
+        this.name = name;
+        this.qualification = qualification;
+        this.designation = designation;
+        this.salary = salary;
+        this.department = department;
+    }
+
+    public int getD_id() { // Changed from getDoc_id to getD_id
+        return d_id;
+    }
+
+    public void setD_id(int d_id) { // Changed from setDoc_id to setD_id
+        this.d_id = d_id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getQualification() {
+        return qualification;
+    }
+
+    public void setQualification(String qualification) {
+        this.qualification = qualification;
+    }
+
+    public String getDesignation() {
+        return designation;
+    }
+
+    public void setDesignation(String designation) {
+        this.designation = designation;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    @Override
+    public String toString() {
+        return "Doctor{" +
+                "d_id=" + d_id + // Changed from doc_id to d_id
+                ", name='" + name + '\'' +
+                ", qualification='" + qualification + '\'' +
+                ", designation='" + designation + '\'' +
+                ", salary=" + salary +
+                ", department='" + department + '\'' +
+                '}';
+    }
+}
